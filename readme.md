@@ -1,11 +1,13 @@
 # SuffixTreeLempelZiv
+Farzad Farnoud, California Institute of Technology, September 2014
+Uses code from Mark Nelson
 
-## NAME
-        STree_LZF
+## Synopsis
+This program gives the suffix tree and lempel-ziv factorization of a sequence.
+In adition it can give the length of the longest prefix for each position that has appeard before.
 
-Gives the suffix tree and lempel-ziv factorization of a sequence
-
-For help, use -h or --help
+## Code Example
+For help, use STree_LZF -h or STree_LZF --help
 
         Gives the suffix tree and Lempel-Ziv factorization of the input string
 
