@@ -43,9 +43,13 @@ done!
 
 Press Enter to exit...
 ``` 
+Note that if the final character is not unique $ is added. Based on the output,   
+the blocks of the Lempel-Ziv factorization of banana$ are  
+|b|a|n|ana|$| 
+
 In the second usage, the input is a file and the output is also printed in files. 
 
 
-_Farzad Farnoud, http://farnoud.info_
-_California Institute of Technology, September 2014_
-_The output routine uses code from Mark Nelson_
+_Farzad Farnoud, http://farnoud.info_  
+_California Institute of Technology, September 2014_  
+_The output routine uses code from Mark Nelson_  
