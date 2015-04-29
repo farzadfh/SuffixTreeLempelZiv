@@ -6,8 +6,7 @@ In adition it can give the length of the longest prefix for each position that h
 
 ## Code Example
 For help, use `STree_LZF -h` or `STree_LZF --help`.
-The code can be used in two ways. First, when the input sequence is given on screen.  
-In this case the ouput is also printed on screen:
+The code can be used in two ways. First, when the input sequence is given on screen. In this case the ouput is also printed on screen:
 ```
 > STree_LZF -s banana
 
