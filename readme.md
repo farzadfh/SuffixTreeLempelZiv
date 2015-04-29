@@ -47,6 +47,6 @@ Note that if the final character is not unique $ is added. Based on the output, 
 In the second usage, the input is a file and the output is also printed in files. 
 
 
-_Farzad Farnoud, http://farnoud.info_  
+_[Farzad Farnoud](http://farnoud.info)_  
 _California Institute of Technology, September 2014_  
 _The output routine uses code from Mark Nelson_  
