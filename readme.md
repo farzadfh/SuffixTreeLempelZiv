@@ -43,35 +43,9 @@ done!
 
 Press Enter to exit...
 ``` 
-
-        Gives the suffix tree and Lempel-Ziv factorization of the input string
-
-USAGE 1: SCREEN MODE
-
-        STree_LZF -s input-sequence
-
-USAGE 2: FILE MODE
-
-        STree_LZF -f input-file [-b start-line] [-e end-line] [-t suffix-tree-output-file]
-        [-l LZ-factorization-output-file [-p]]
-
-NOTES for SCREEN MODE:
-
-        The input is given as a sequence, and all outputs are printed on screen.
-	Example:
-	        
-		
-NOTES for FILE MODE:
-
-        The input is given as a file. The input sequence is the sequence starting on 
-		line start-line and ending on end-line. Newline characters are removed from the sequence.
-	If -t is given, the suffix tree is printed in file suffix-tree-output-file.
-	If -l is given block length of the Lempel-Ziv factorization are given in file 
-		LZ-factorization-output-file.
-	If -p is used, a list is appended to LZ-factorization-output-file, where the 
-		i'th number is the length  of longest prefix starting at i that also starts at j<i.
+In the second usage, the input is a file and the output is also printed in files. 
 
 
-Farzad Farnoud, http://farnoud.info
-California Institute of Technology, September 2014  
-Uses code from Mark Nelson
+_Farzad Farnoud, http://farnoud.info_
+_California Institute of Technology, September 2014_
+_The output routine uses code from Mark Nelson_
