@@ -1,11 +1,12 @@
 # SuffixTreeLempelZiv
 
+## NAME
+        STree_LZF
+
 Gives the suffix tree and lempel-ziv factorization of a sequence
 
 For help, use -h or --help
 
-NAME
-        STree_LZF
         Gives the suffix tree and Lempel-Ziv factorization of the input string
 
 USAGE 1: SCREEN MODE
