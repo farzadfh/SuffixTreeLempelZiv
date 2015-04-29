@@ -1,13 +1,48 @@
 # SuffixTreeLempelZiv
-Farzad Farnoud, California Institute of Technology, September 2014  
-Uses code from Mark Nelson
 
 ## Synopsis
 This program gives the suffix tree and lempel-ziv factorization of a sequence.
 In adition it can give the length of the longest prefix for each position that has appeard before.
 
 ## Code Example
-For help, use STree_LZF -h or STree_LZF --help
+For help, use `STree_LZF -h` or `STree_LZF --help`.
+The code can be used in two ways. First, when the input sequence is given on screen.  
+In this case the ouput is also printed on screen:
+```
+> STree_LZF -s banana
+
+Checking uniqueness of last character...Last character not unique. Adding '$'.
+
+Initializing suffix tree...done!
+
+Constructing suffix tree of sequence of length 7...done!
+Suffix tree has 11 nodes.
+
+Computing LZF...done!
+
+Suffix tree:
+ Start  End  Suf  First Last  String
+    0     1  -1    -1      6  banana$
+    4     2  -1     3      6  na$
+    6     3  -1     3      6  na$
+    8     4   6     1      3  na
+    4     5  -1     5      6  $
+    0     6   8     1      3  na
+    6     7  -1     5      6  $
+    0     8   0     0      1  a
+    8     9  -1     5      6  $
+    0    10  -1     5      6  $
+done!
+
+Block lengths in Lempel-Ziv factorization:
+1 1 1 3 1
+
+The i'th number is the length of longest prefix starting at i that also starts at j<i:
+0 0 0 3 2 1 0
+done!
+
+Press Enter to exit...
+``` 
 
         Gives the suffix tree and Lempel-Ziv factorization of the input string
 
@@ -24,38 +59,7 @@ NOTES for SCREEN MODE:
 
         The input is given as a sequence, and all outputs are printed on screen.
 	Example:
-	        >STree_LZF -s banana
-		Checking uniqueness of last character...Last character not unique. Adding '$'.
-		
-		Initializing suffix tree...done!
-		
-		Constructing suffix tree of sequence of length 7...done!
-		Suffix tree has 11 nodes.
-		
-		Computing LZF...done!
-		
-		Suffix tree:
-		Start  End  Suf  First Last  String
-		0     1  -1    -1      6  banana$
-		4     2  -1     3      6  na$
-		6     3  -1     3      6  na$
-		8     4   6     1      3  na
-		4     5  -1     5      6  $
-		0     6   8     1      3  na
-		6     7  -1     5      6  $
-		0     8   0     0      1  a
-		8     9  -1     5      6  $
-		0    10  -1     5      6  $
-		done!
-			
-		Block lengths in Lempel-Ziv factorization:
-		1 1 1 3 1
-		
-		The i'th number is the length of longest prefix starting at i that also starts at j<i:
-		0 0 0 3 2 1 0
-		done!
-		
-		Press Enter to exit...
+	        
 		
 NOTES for FILE MODE:
 
@@ -66,3 +70,8 @@ NOTES for FILE MODE:
 		LZ-factorization-output-file.
 	If -p is used, a list is appended to LZ-factorization-output-file, where the 
 		i'th number is the length  of longest prefix starting at i that also starts at j<i.
+
+
+Farzad Farnoud, http://farnoud.info
+California Institute of Technology, September 2014  
+Uses code from Mark Nelson
