@@ -1,12 +1,10 @@
 # SuffixTreeLempelZiv
 
 ## Synopsis
-This program gives the suffix tree and lempel-ziv factorization of a sequence.
-In adition it can give the length of the longest prefix for each position that has appeard before.
+This program gives the suffix tree and lempel-ziv factorization of a sequence. In adition it can give the length of the longest prefix for each position that has appeard before.
 
 ## Code Example
-For help, use `STree_LZF -h` or `STree_LZF --help`.
-The code can be used in two ways. First, when the input sequence is given on screen. In this case the ouput is also printed on screen:
+For help, use `STree_LZF -h` or `STree_LZF --help`. The code can be used in two ways. First, when the input sequence is given on screen. In this case the ouput is also printed on screen:
 ```
 > STree_LZF -s banana
 
@@ -42,8 +40,7 @@ done!
 
 Press Enter to exit...
 ``` 
-Note that if the final character is not unique $ is added. Based on the output,   
-the blocks of the Lempel-Ziv factorization of banana$ are  
+Note that if the final character is not unique $ is added. Based on the output, the blocks of the Lempel-Ziv factorization of banana$ are  
 |b|a|n|ana|$| 
 
 In the second usage, the input is a file and the output is also printed in files. 
