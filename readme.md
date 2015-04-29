@@ -1,6 +1,5 @@
 # SuffixTreeLempelZiv
-Farzad Farnoud, California Institute of Technology, September 2014
-
+Farzad Farnoud, California Institute of Technology, September 2014  
 Uses code from Mark Nelson
 
 ## Synopsis
